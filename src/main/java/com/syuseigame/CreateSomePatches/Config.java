@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package com.syuseigame.CreateSomePatches;
 
 import java.util.List;
 import java.util.Set;
