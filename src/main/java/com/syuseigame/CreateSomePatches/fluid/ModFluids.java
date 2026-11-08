@@ -10,7 +10,7 @@ public class ModFluids extends FluidType {
     private final ResourceLocation still, flowing;
     private final int tint;
 
-    public ModFluids(Properties props,ResourceLocation still,ResourceLocation flowing,int tint) {
+    public ModFluids(Properties props, ResourceLocation still, ResourceLocation flowing, int tint) {
         super(props);
         this.still = still;
         this.flowing = flowing;
