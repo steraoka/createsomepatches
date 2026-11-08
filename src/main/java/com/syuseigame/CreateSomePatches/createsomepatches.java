@@ -2,7 +2,6 @@ package com.syuseigame.CreateSomePatches;
 
 import com.syuseigame.CreateSomePatches.block.ModBlocks;
 import com.syuseigame.CreateSomePatches.fluid.ModFluidType;
-import com.syuseigame.CreateSomePatches.fluid.ModFluids;
 import com.syuseigame.CreateSomePatches.item.ModCreativeModeTabs;
 import com.syuseigame.CreateSomePatches.item.ModItems;
 import org.slf4j.Logger;

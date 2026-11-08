@@ -1,7 +1,6 @@
 package com.syuseigame.CreateSomePatches.item;
 
 import com.syuseigame.CreateSomePatches.fluid.ModFluidType;
-import com.syuseigame.CreateSomePatches.fluid.ModFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import com.syuseigame.CreateSomePatches.createsomepatches;
