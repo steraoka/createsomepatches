@@ -12,7 +12,6 @@ import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
-import org.apache.logging.log4j.util.PropertiesPropertySource;
 
 public class ModFluidsModelProvider {
     public static final DeferredRegister<FluidType> FLUID_TYPES=DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES,createsomepatches.MOD_ID);
@@ -23,15 +22,13 @@ public class ModFluidsModelProvider {
             ResourceLocation.withDefaultNamespace("block/water_still"),
             ResourceLocation.withDefaultNamespace("block/water_flow"),
             0xFFEAAE2F));
-    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> SORCE=FLUIDS.register("heated_lava",() -> new BaseFlowingFluid.Source(PROPS));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> SOURCE=FLUIDS.register("heated_lava",() -> new BaseFlowingFluid.Source(PROPS));
     public static final DeferredHolder<Fluid,BaseFlowingFluid.Flowing> FLOWING=FLUIDS.register("heated_lava_flowing",() -> new BaseFlowingFluid.Flowing(PROPS));
-    public static final BaseFlowingFluid.Properties PROPS = new BaseFlowingFluid.Properties(MY_TYPE,SORCE,FLOWING)
+    public static final BaseFlowingFluid.Properties PROPS = new BaseFlowingFluid.Properties(MY_TYPE,SOURCE,FLOWING)
             .levelDecreasePerBlock(2)
             .tickRate(2)
             .explosionResistance(10f)
             .slopeFindDistance(2)
             .block(ModBlocks.MY_FLUID_BLOCK)
-            .bucket(ModItems.MY_FLUID_BUCKET);}
-
-
+            .bucket(ModItems.HEATED_LAVA_BUCKET);
 }

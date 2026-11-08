@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                 //---ここからタブ追加アイテムを記述---
                 output.accept(ModItems.ENRICHED_QUARTZ);
                 output.accept(ModBlocks.RAINBOW_DIAMOND_BLOCK);
+                output.accept(ModItems.HEATED_LAVA_BUCKET);
             }))
             .build()
     );
