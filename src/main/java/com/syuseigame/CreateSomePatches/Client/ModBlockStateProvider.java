@@ -20,7 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
     {
         ModelFile model = models().getBuilder("heated_lava_block")
                 .texture("particle", ResourceLocation.withDefaultNamespace("block/lava_still"));
-        getVariantBuilder(ModBlocks.MY_FLUID_BLOCK.get())
+        getVariantBuilder(ModBlocks.HEATED_LAVA_BLOCK.get())
                 .partialState().setModels(new ConfiguredModel(model));
         simpleBlockWithItem(ModBlocks.RAINBOW_DIAMOND_BLOCK);
     }

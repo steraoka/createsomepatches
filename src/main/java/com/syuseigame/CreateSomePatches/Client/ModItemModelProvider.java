@@ -15,5 +15,7 @@ public class ModItemModelProvider extends ItemModelProvider
     @Override
     protected void registerModels(){
         basicItem(ModItems.ENRICHED_QUARTZ.get());
+        basicItem(ModItems.HEATED_LAVA_BUCKET.get());
+
     }
 }

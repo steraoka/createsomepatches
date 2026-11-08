@@ -1,5 +1,6 @@
 package com.syuseigame.CreateSomePatches.item;
 
+import com.syuseigame.CreateSomePatches.fluid.ModFluidType;
 import com.syuseigame.CreateSomePatches.fluid.ModFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
@@ -14,7 +15,7 @@ public class ModItems {
 
 //-----追加するアイテム群------
     public static final DeferredItem<Item> ENRICHED_QUARTZ=ITEMS.register("enriched_quartz",() -> new Item(new Item.Properties()));
-    public static final DeferredItem<BucketItem> HEATED_LAVA_BUCKET = ITEMS.register("bucket_in_heated_lava",() -> new BucketItem(ModFluids.SOURCE.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
+    public static final DeferredItem<BucketItem> HEATED_LAVA_BUCKET = ITEMS.register("bucket_in_heated_lava",() -> new BucketItem(ModFluidType.SOURCE.get(),new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 //--------------------------
 public static void register(IEventBus eventBus)
 {

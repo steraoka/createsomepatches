@@ -6,6 +6,7 @@ import com.syuseigame.CreateSomePatches.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.material.Fluid;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -28,6 +29,10 @@ public class ModFluidType {
             .tickRate(2)
             .explosionResistance(10f)
             .slopeFindDistance(2)
-            .block(ModBlocks.MY_FLUID_BLOCK)
+            .block(ModBlocks.HEATED_LAVA_BLOCK)
             .bucket(ModItems.HEATED_LAVA_BUCKET);
+    public static void register(IEventBus eventBus) {
+        FLUID_TYPES.register(eventBus);
+        FLUIDS.register(eventBus);
+    }
 }

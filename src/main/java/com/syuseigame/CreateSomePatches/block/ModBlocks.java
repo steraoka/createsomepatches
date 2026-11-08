@@ -2,7 +2,6 @@ package com.syuseigame.CreateSomePatches.block;
 
 import com.syuseigame.CreateSomePatches.createsomepatches;
 import com.syuseigame.CreateSomePatches.fluid.ModFluidType;
-import com.syuseigame.CreateSomePatches.fluid.ModFluids;
 import com.syuseigame.CreateSomePatches.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -30,7 +29,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     //音
                     .sound(SoundType.AMETHYST)));
-    public static final DeferredBlock<LiquidBlock> MY_FLUID_BLOCK = BLOCKS.register("heated_lava_block",
+    public static final DeferredBlock<LiquidBlock> HEATED_LAVA_BLOCK = BLOCKS.register("heated_lava_block",
             () -> new LiquidBlock(ModFluidType.SOURCE.get(),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.LAVA)));
     private static <T extends Block> DeferredBlock<T> registerBlock(String name,Supplier<T> block){

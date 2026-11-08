@@ -18,6 +18,8 @@ public class ModJAJPLanguageProvider extends LanguageProvider {
         addItem(ModItems.ENRICHED_QUARTZ,"濃縮されたクォーツ");
         addBlock(ModBlocks.RAINBOW_DIAMOND_BLOCK,"レインボーダイヤモンドブロック");
         add("creativetabs.tutrial_tab","練習");
+        addItem(ModItems.HEATED_LAVA_BUCKET,"加熱された溶岩入りバケツ");
+        addBlock(ModBlocks.HEATED_LAVA_BLOCK,"加熱された溶岩");
     }
 }
 

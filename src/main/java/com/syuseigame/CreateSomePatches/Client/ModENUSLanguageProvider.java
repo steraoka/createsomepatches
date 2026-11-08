@@ -18,6 +18,9 @@ public class ModENUSLanguageProvider extends LanguageProvider {
         addItem(ModItems.ENRICHED_QUARTZ,"enriched_quartz");
         addBlock(ModBlocks.RAINBOW_DIAMOND_BLOCK,"rainbow_diamond_block");
         add("creativetabs.tutrial_tab","Practice");
+        addItem(ModItems.HEATED_LAVA_BUCKET,"Bucket in Heated Lava");
+        addBlock(ModBlocks.HEATED_LAVA_BLOCK,"Heated Lava");
+
     }
 }
 
